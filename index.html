@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="Content/css/main.css">
+    <title>Lisø Holdings AS</title>
+    <style>
+        .mySlides{display: none;}
+    </style>
+</head>
+<body>
+    <main>
+        <section class="imageSlider">
+            <div>
+                <img class="mySlides" src="Content/images/Dvergsness.png" style="width:100%">
+                <img class="mySlides" src="Content/images/chiiiago.jpg" style="width:100%">
+                <img class="mySlides" src="Content/images/hus.png" style="width:100%">
+            </div>
+        </section>
+        <nav>
+            <ul>
+                <li class="logo"><img src="https://via.placeholder.com/150x50" alt=""></li>
+                <li><u>Forside</u></li>
+                <li><a href="">Om LISØ</a></li>
+                <li><a href="">Projekter</a></li>
+                <li class="kontakt"> <a href="">Kontakt</a> </li>
+            </ul>
+        </nav>
+    </main>
+</body>
+<script>
+        var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 5000); // Change image every 2 seconds
+    }
+</script>
+</html>
+
+
