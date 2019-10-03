@@ -1,0 +1,69 @@
+body {
+  font-family: consolas;
+  margin: 0;
+}
+
+body main .imageSlider div {
+  margin: 0;
+  padding: 0;
+}
+
+body main .imageSlider div img {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body main nav {
+  position: fixed;
+  width: 100%;
+  border-bottom: 2px solid #707070;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  top: 0;
+}
+
+body main nav ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body main nav ul .kontakt {
+  float: right;
+  padding: 21px;
+  vertical-align: middle;
+  height: 100%;
+  border-left: 2px #707070 solid;
+  background-color: rgba(64, 224, 208, 0.658);
+  margin: 0;
+}
+
+body main nav ul li {
+  display: inline-block;
+  font-size: 30px;
+  vertical-align: middle;
+  margin: 0 20px;
+  cursor: pointer;
+}
+
+body main nav ul li a {
+  text-decoration: none;
+}
+
+body main nav ul li a:visited {
+  color: black;
+}
+
+body main nav ul .logo {
+  border-right: 2px #707070 solid;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 0;
+  cursor: auto;
+}
+/*# sourceMappingURL=main.css.map */

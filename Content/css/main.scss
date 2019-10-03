@@ -1,0 +1,62 @@
+body{
+    font-family: consolas;
+    margin: 0;
+    main{
+        .imageSlider{
+            
+            div{
+                margin: 0;
+                padding: 0;
+                img{
+                    padding: 0;
+                    margin: 0;
+                    width: 100%;
+                    height: 100vh;
+                    object-fit: cover;
+                }
+            }
+        }
+        nav{
+            position: fixed;
+            width: 100%;
+            border-bottom: 2px solid #707070;
+            box-sizing: border-box;
+            top: 0;
+            ul{
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                .kontakt{
+                    float: right;
+                    padding: 21px;
+                    vertical-align: middle;
+                    height: 100%;
+                    border-left: 2px #707070 solid;
+                    background-color: rgba(64, 224, 208, 0.658);
+                    margin: 0;
+                }
+                li{
+                    display: inline-block;
+                    font-size: 30px;
+                    vertical-align: middle;
+                    margin: 0 20px;
+                    cursor: pointer;
+                    a{
+                        text-decoration: none;
+                    }
+                    a:visited{
+                        color: black;
+                    }
+                }
+                .logo{
+                    border-right: 2px #707070 solid;
+                    padding: 10px;
+                    box-sizing: border-box;
+                    margin-left: 0;
+                    cursor: auto;
+                }
+                
+            }
+        }
+    }
+}
