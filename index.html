@@ -6,47 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="keywords" content="">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Content/css/main.css">
     <title>Lisø Holdings AS</title>
     <style>
         .mySlides{display: none;}
+        
     </style>
 </head>
 <body>
     <main>
-        <section class="imageSlider">
-            <div>
-                <img class="mySlides" src="Content/images/Dvergsness.png" style="width:100%">
-                <img class="mySlides" src="Content/images/chiiiago.jpg" style="width:100%">
-                <img class="mySlides" src="Content/images/hus.png" style="width:100%">
+        <section class="slidercontainer">
+            <article class="imageSlider">
+                <div>
+                    <img class="mySlides" src="Content/images/Dvergsness.png" style="width:100%">
+                    <img class="mySlides" src="Content/images/chiiiago.jpg" style="width:100%">
+                    <img class="mySlides" src="Content/images/hus.png" style="width:100%">
+                </div>
+            </article>
+            <div class="slidertekst">
+                <span class="slidertekstStor">Lisø <br> Holdings <br> A/S <br></span>
+                <span class="slidertekstMindre">Dit lokale byggefirma</span>
+                <span class="slidertekstMindre">Dit lokale byggefirma</span>
+                <span class="slidertekstMindre">Dit lokale byggefirma</span>
             </div>
         </section>
         <nav>
             <ul>
-                <li class="logo"><img src="https://via.placeholder.com/150x50" alt=""></li>
+                <li class="logo"><img src="Content/images/LISyo_Utvikling_AS_logo1.eps.png" alt=""></li>
                 <li><u>Forside</u></li>
-                <li><a href="">Om LISØ</a></li>
-                <li><a href="">Projekter</a></li>
-                <li class="kontakt"> <a href="">Kontakt</a> </li>
+                <li><a href="om.html">Om LISØ</a></li>
+                <li><a href="Projekter.html">Projekter</a></li>
+                <li class="kontakt"> <a onclick="document.getElementById('id01').style.display='block'">Kontakt</a> </li>
             </ul>
         </nav>
     </main>
+    <div>        
+            <div id="id01" class="modal">
+                <div class="modal-content">
+                    <header> 
+                        <span onclick="document.getElementById('id01').style.display='none'" 
+                        class="button display-topright">&times;</span>
+                        <h2>Kontakt os</h2>
+                        <img src="https://via.placeholder.com/150" alt="">
+                    </header>
+                    <hr>
+                    <div>
+                        <p>Email: google@gmail.com</p>
+                        <p>Telefon nummer: +47 66666666</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
-<script>
-        var myIndex = 0;
-    carousel();
-    
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";  
-      }
-      myIndex++;
-      if (myIndex > x.length) {myIndex = 1}    
-      x[myIndex-1].style.display = "block";  
-      setTimeout(carousel, 5000); // Change image every 2 seconds
-    }
+<script src="Content/js/js.js">
+
 </script>
 </html>
 

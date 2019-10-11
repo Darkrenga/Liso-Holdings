@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .container1, .container2, .container3, .container4, .container5, .container6{
+        position: relative;
+        width: 300px;
+    }
+    .overlay1, .overlay2, .overlay3, .overlay4, .overlay5, .overlay6{
+        position: absolute;
+        bottom: 4px;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5); /* Black see-through */
+        color: #f1f1f1;
+        width: 100%;
+        transition: .5s ease;
+        opacity:0;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .container1:hover .overlay1 {
+        opacity: 1;
+    }
+    .container2:hover .overlay2 {
+        opacity: 1;
+    }
+    .container3:hover .overlay3 {
+        opacity: 1;
+    }
+    .container4:hover .overlay4 {
+        opacity: 1;
+    }
+    .container5:hover .overlay5 {
+        opacity: 1;
+    }
+    .container6:hover .overlay6 {
+        opacity: 1;
+    }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <img src="https://via.placeholder.com/150" alt="Avatar" class="image">
+        <div class="overlay1">1</div>
+    </div>
+
+    <div class="container2">
+        <img src="https://via.placeholder.com/150" alt="Avatar" class="image">
+        <div class="overlay2">2</div>
+    </div>
+
+    <div class="container3">
+        <img src="https://via.placeholder.com/150" alt="Avatar" class="image">
+        <div class="overlay3">3</div>
+    </div>
+
+    <div class="container4">
+        <img src="https://via.placeholder.com/150" alt="Avatar" class="image">
+        <div class="overlay4">4</div>
+    </div>
+
+    <div class="container5">
+        <img src="https://via.placeholder.com/150" alt="Avatar" class="image">
+        <div class="overlay5">5</div>
+    </div>
+
+    <div class="container6">
+        <img src="https://via.placeholder.com/150" alt="Avatar" class="image">
+        <div class="overlay6">6</div>
+    </div>
+</body>
+</html>
